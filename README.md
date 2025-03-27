@@ -56,8 +56,8 @@ Hay dos formas de configurar el proyecto:
 
 1. Clona el repositorio:
     ```bash
-    git clone https://github.com/tu-usuario/tu-proyecto.git
-    cd tu-proyecto
+    git clone https://github.com/AlexEP11/metodos-busqueda-front.git
+    cd metodos-busqueda-front
     ```
 
 ### Opción 2: Descargar ZIP
