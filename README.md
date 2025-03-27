@@ -1,10 +1,5 @@
 # Metodos de Busqeuda - FrontEnd
 
-Antes de comenzar, asegúrate de tener instalado lo siguiente:
-
--   [Node.js](https://nodejs.org/) (versión 18.x o superior)
--   [npm](https://www.npmjs.com/) (incluido con Node.js)
-
 ## Requisitos Previos
 
 Antes de comenzar, asegúrate de tener instalado lo siguiente:
