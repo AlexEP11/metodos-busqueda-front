@@ -1,54 +1,111 @@
-# React + TypeScript + Vite
+# Metodos de Busqeuda - FrontEnd
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
-Currently, two official plugins are available:
+-   [Node.js](https://nodejs.org/) (versión 18.x o superior)
+-   [npm](https://www.npmjs.com/) (incluido con Node.js)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Requisitos Previos
 
-## Expanding the ESLint configuration
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+-   [Node.js](https://nodejs.org/) (versión 18.x o superior)
+-   [npm](https://www.npmjs.com/) (incluido con Node.js)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Instalación de Node.js
+
+### Windows
+
+1. Visita [nodejs.org](https://nodejs.org/)
+2. Descarga el instalador para Windows
+3. Ejecuta el instalador y sigue las instrucciones
+4. Verifica la instalación abriendo la terminal y ejecutando:
+    ```bash
+    node --version
+    npm --version
+    ```
+
+### macOS
+
+1. Usa Homebrew:
+    ```bash
+    brew install node
+    ```
+2. O descarga el instalador de [nodejs.org](https://nodejs.org/)
+3. Verifica la instalación:
+    ```bash
+    node --version
+    npm --version
+    ```
+
+### Linux (Ubuntu/Debian)
+
+```bash
+# Actualiza los repositorios
+sudo apt update
+
+# Instala Node.js y npm
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# Verifica la instalación
+node --version
+npm --version
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Configuración del Proyecto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Hay dos formas de configurar el proyecto:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### Opción 1: Clonar con Git
+
+1. Clona el repositorio:
+    ```bash
+    git clone https://github.com/tu-usuario/tu-proyecto.git
+    cd tu-proyecto
+    ```
+
+### Opción 2: Descargar ZIP
+
+1. Visita la página del repositorio en GitHub
+2. Haz clic en el botón verde "Code"
+3. Selecciona "Download ZIP"
+4. Extrae el archivo ZIP en tu computadora
+5. Abre la terminal en la carpeta extraída
+
+### Instalación de Dependencias
+
+Una vez descargado el proyecto (por cualquiera de los métodos) y estando en la carpeta del proyecto, instala las dependencias:
+
+```bash
+npm install
 ```
+
+## Iniciar Proyecto
+
+En el directorio del proyecto una vez descargado las dependencias con el paso anterios ahora podras ejecutar el proeycto:
+
+En la terminal del directorio del proyecto ejecuta el siguiente comando:
+
+```bash
+npm run dev
+```
+
+Debera cargar algo como lo siguiente, lo unico que debes de hacer es dar clic en el link de: http://localhost:5173/
+
+```bash
+      VITE v6.2.2  ready in 514 ms
+
+    ➜  Local:   http://localhost:5173/
+    ➜  Network: use --host to expose
+    ➜  press h + enter to show help
+
+```
+
+La pagina luce asi:
+![Pantalla Principal](./public/pagina.png)
+
+## Configuración del servidor
+
+Por ultimo tendras que activar el servidor de Django para obtener los datos, las instrucciones se encuentran en:
+https://github.com/Fgvs11/MetodosBusquedaDjango

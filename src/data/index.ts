@@ -201,11 +201,4 @@ export const initialEdges = [
     { id: "Et6-Cn1", source: "Et6", target: "Cn1" },
 ].map((edge) => ({ ...edge, style: edgeStyles, type: "straight" }));
 
-export const algoritmos = [
-    "BFS",
-    "DFS",
-    "Djistrak",
-    "Voraz",
-    "A*",
-    "Hill Climbing",
-];
+export const algoritmos = ["BFS", "DFS", "DIJSKTRA", "VORAZ", "A*", "HILL"];
